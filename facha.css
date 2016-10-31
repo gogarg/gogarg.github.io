@@ -39,6 +39,49 @@ main {
 	background-color: purple;
 }
 
+.generosi {
+	height: 540px;
+	width: 430px;
+	margin: 20px 5px 20px 20px;
+	display: inline;
+	float: left;
+	background-color: green;
+}
+
+.generosd {
+	height: 540px;
+	width: 200px;
+	margin: 10px 20px 10px 5px;
+	display: inline;
+	float: right;
+	background-color: green;
+}
+
+.rectangulo {
+	height: 150px;
+	width: 417px;
+	float: left;
+	background-color: red;
+}
+
+.cuadradoc {
+	height: 200px;
+	width: 200px;
+	margin: 20px 15px 20px 0px;
+	display: inline;
+	float: left;
+	background-color: red;
+}
+
+.cuadradog {
+	height: 260px;
+	width: 200px;
+	margin: 10px 0px 10px 0px;
+	display: inline;
+	float: left;
+	background-color: red;
+}
+
 .slidermarcas {
 	height: 50px;
 	width: 680px;
