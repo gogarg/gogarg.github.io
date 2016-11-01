@@ -12,7 +12,7 @@ header {
 .head {
 	height: 60px;	
 	width: 1100px;
-	background-color: red;
+	/*background-color: red;*/
 	margin: 0 auto;
 }
 
@@ -122,11 +122,11 @@ main {
 	height: 50px;
 	width: 680px;
 	margin: 0 auto;
-	/*padding-bottom: 30px;*/
+	padding-bottom: 30px;
 }
 
 .bestseller {
-	height: 510px;
+	height: 560px;
 	width: 1100px;
 	/*background-color: green;*/
 }
@@ -138,13 +138,13 @@ main {
 }
 
 .containerpa {
-	height: 450px;
+	height: 500px;
 	width: 970px;
 	margin: 0 auto;
 }
 
 .producta {
-	height: 450px;
+	height: 500px;
 	width: 300px;
 	margin-right: 11px;
 	margin-left: 11px;
@@ -153,20 +153,40 @@ main {
 	/*background-color: pink;*/
 }
 
+div.producta:hover {
+	background-color: #FFD700;
+} 
+
+.producta p {
+	text-align: center;
+}
+
+.producta img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.boton {
+	height: 15px;
+	width: 50px;
+	margin: 0 auto;
+	/*background-color: red;*/
+}
+
 .ofertas {
-	height: 510px;
+	height: 560px;
 	width: 1100px;
 	/*background-color: violet;*/
 }
 
 .containerpb {
-	height: 450px;
+	height: 500px;
 	width: 970px;
 	margin: 0 auto;
 }
 
 .productb {
-	height: 450px;
+	height: 500px;
 	width: 300px;
 	margin-right: 11px;
 	margin-left: 11px;
@@ -175,27 +195,36 @@ main {
 	/*background-color: pink;*/
 }
 
-.productb a{
+.productb p {
+	text-align: center;
+}
+
+.productb img {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*.productb a{
 	height: 10px;
 	width: 20px;
 	margin: 0 auto;
-	/*background-color: red;*/
-}
+	background-color: red;
+}*/
 
 .categorias {
-	height: 510px;
+	height: 560px;
 	width: 1100px;
 	/*background-color: yellow;*/
 }
 
 .containerpc {
-	height: 450px;
+	height: 500px;
 	width: 970px;
 	margin: 0 auto;
 }
 
 .slidergen {
-	height: 450px;
+	height: 500px;
 	width: 150px;
 	margin-right: 20px;
 	margin-left: 20px;
@@ -205,7 +234,7 @@ main {
 }
 
 .productc {
-	height: 450px;
+	height: 500px;
 	width: 230px;
 	margin-right: 15px;
 	margin-left: 15px;
@@ -255,5 +284,5 @@ footer {
 	height: 55px;
 	width: 1100px;
 	margin: 0 auto;
-	/*background-color: white;*/
+	background-color: white;
 }
