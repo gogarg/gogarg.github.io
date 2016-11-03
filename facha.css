@@ -35,7 +35,6 @@ main {
 .slider {
 	height: 800px;
 	width: 100%;
-	background-image: url("img/slider/witcher3.png");
 }
 
 .mainwrapper {
@@ -56,7 +55,8 @@ main {
 	width: 680px;
 	margin: 0 auto;
 	position: relative;
-	z-index: 2;
+	z-index: 2002;
+	margin-top: -170px;
 }
 
 .generosi {
@@ -415,8 +415,8 @@ footer {
 }
 
 .sociales li img {
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 }
 
 .copyright {
