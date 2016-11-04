@@ -12,12 +12,27 @@
 <body>
 	<header>
 		<div class="head">
-			<div class="logo">
-				<img src="img/goggalaxy.png">
+			<ul>
+				<li class="logo"><img src="img/goggalaxy.png"></li>
+				<li class="dropdown">
+					<a href="#">JUEGOS</a>
+					<div class="dropdown-content">
+						<a href="#">EN VENTA</a>
+						<a href="#">MAS VENDIDOS</a>
+						<a href="#">NUEVOS LANZAMIENTOS</a>
+						<a href="#">MEJOR VALORADOS</a>
+					</div>
+				</li>
+				<li class="normal">COMUNIDAD</li>
+				<li class="normal">AYUDA</li>
+			</ul>
+			<div class="container">
+			    <form class="searchbox">
+			        <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+			        <input type="submit" class="searchbox-submit" value="GO">
+			        <span class="searchbox-icon"><img src="img/lupa.png"></span>
+			    </form>
 			</div>
-			<nav>
-				
-			</nav>
 		</div>	
 	</header>
 	<main>
@@ -70,28 +85,22 @@
 				</div>
 				<div class="containerpa">
 					<div class="producta">
-						<p>DESTINY: THE DARK BELOW</p>
 						<img src="img/cover/destiny.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
+						<p>DESTINY: THE DARK BELOW</p>
+						<p>$600</p>
+						<a href="">Comprar</a>
 					</div>
 					<div class="producta">
-						<p>THE DIVISION</p>
 						<img src="img/cover/division.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
+						<p>THE DIVISION</p>
+						<p>$450</p>
+						<a href="">Comprar</a>						
 					</div>
 					<div class="producta">
-						<p>THE WITCHER 3</p>
 						<img src="img/cover/witcher.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
+						<p>THE WITCHER 3</p>
+						<p>$500</p>
+						<a href="">Comprar</a>
 					</div>
 				</div>	
 			</div>
@@ -101,62 +110,27 @@
 				</div>
 				<div class="containerpb">
 					<div class="productb">
-						<p>GTA V</p>
 						<img src="img/cover/gta.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
-					</div>
-					<div class="productb">
-						<p>CALL OF DUTY: INFINITE WARFARE</p>
-						<img src="img/cover/cod.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
-					</div>
-					<div class="productb">
-						<p>THE LEGEND OF ZELDA</p>
-						<img src="img/cover/zelda.png">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
-					</div>
-				</div>	
-			</div>	
-			<div class="categorias">
-				<div class="titulo">
-					<h1>CATEGORÍAS</h1>
-				</div>
-				<div class="containerpc">
-					<div class="slidergen">
-					</div>
-					<div class="productc">
-						<p>Nombre</p>
-						<img src="">
-						<p>Precio</p>
+						<p>GTA V</p>
+						<p>$300</p>
 						<a href="">Comprar</a>
-						</div>
-						<div class="productc">
-						<p>Nombre</p>
-						<img src="">
-						<p>Precio</p>
+					</div>
+					<div class="productb">
+						<img src="img/cover/cod.png">
+						<p>CALL OF DUTY: INFINITE WARFARE</p>
+						<p>$250</p>
 						<div class="boton">
 							<a href="">Comprar</a>
 						</div>	
 					</div>
-					<div class="productc">
-						<p>Nombre</p>
-						<img src="">
-						<p>Precio</p>
-						<div class="boton">
-							<a href="">Comprar</a>
-						</div>	
+					<div class="productb">
+						<img src="img/cover/zelda.png">
+						<p>THE LEGEND OF ZELDA</p>
+						<p>$275</p>
+						<a href="">Comprar</a>
 					</div>
 				</div>	
-			</div>
+			</div>				
 		</div>
 	</main>
 	<footer>

@@ -4,27 +4,166 @@ body {
 }
 
 header {
-	height: 60px;
+	height: 65px;
 	width: 100%;
 	background-color: black;
 }
 
 .head {
-	height: 60px;	
+	height: 65px;	
 	width: 1100px;
 	margin: 0 auto;
 }
 
-.logo {
-	height: 50px;
-	width: 50px;
+.head ul {
+	margin: 0;
 	display: inline;
 }
 
-.logo img {
+.head li img {
 	height: 50px;
 	width: 50px;
+}
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.head li {
+	float: left;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fafafa;
+    margin-right: 20px;
+    padding-right: 35px;
+}
+
+.head .logo {
 	padding-top: 5px;
+}
+
+.head .normal {
+	padding-top: 14px;
+}
+
+.head li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.head li a {
+	display: block;
+}
+
+.head li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.head .dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fafafa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2002;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content:hover a {
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.container{
+	height: 60px;
+}
+
+.searchbox{
+    position:relative;
+    min-width:50px;
+    width:0%;
+    height:50px;
+    float:right;
+    overflow:hidden;
+    
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.searchbox-input{
+    top:0;
+    right:0;
+    border:0;
+    outline:0;
+    background:#dcddd8;
+    width:100%;
+    height:50px;
+    margin:0;
+    padding:0px 55px 0px 20px;
+    font-size:20px;
+    color:#090c0f;
+}
+.searchbox-input::-webkit-input-placeholder {
+    color: #090c0f;
+}
+.searchbox-input:-moz-placeholder {
+    color: #090c0f;
+}
+.searchbox-input::-moz-placeholder {
+    color: #090c0f;
+}
+.searchbox-input:-ms-input-placeholder {
+    color: #090c0f;
+}
+
+.searchbox-icon,
+.searchbox-submit{
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    top:0;
+    font-family:verdana;
+    font-size:22px;
+    right:0;
+    padding: 0;
+    margin:0;
+    border:0;
+    outline:0;
+    line-height:50px;
+    text-align:center;
+    cursor:pointer;
+    color:#dcddd8;
+    background:black;
+}
+
+.searchbox-open{
+    width:100%;
 }
 
 main {
@@ -44,6 +183,7 @@ main {
 }
 
 .mainwrapper h1 {
+	position: relative;
 	text-align: center;
 	font-family: 'Titillium Web', sans-serif;
 	font-style: italic;
@@ -74,8 +214,6 @@ main {
 	display: inline;
 	float: right;
 }
-
-
 
 .rectangulo1 {
 	height: 150px;
@@ -223,39 +361,19 @@ main {
 	display: none;
 }
 
-.slidermarcas {
-	height: 50px;
-	width: 680px;
-	margin: 0 auto;
-	padding-bottom: 30px;
-}
-
-.boton {
-	height: 70px;
-	width: 100px;
-	margin: 0 auto;
-}
-
-.boton a:link, a:visited {
-    background-color: red;
-    color: #fafafa;
-    padding: 14px 25px;
-    font-family: 'Titillium Web', sans-serif;
-    text-align: center; 
-    text-decoration: none;
-    display: inline-block;
-}
-
-.bestseller {
-	height: 640px;
-	width: 1100px;
-	/*background-color: green;*/
+a:link {
+	display: none;
 }
 
 .titulo {
 	height: 50px;
 	width: 100%;
-	/*background-color: red;*/
+}	
+
+.bestseller {
+	height: 640px;
+	width: 1100px;
+	margin-bottom: 20px;
 }
 
 .containerpa {
@@ -272,35 +390,55 @@ main {
 	margin-left: 11px;
 	float: left;
 	display: inline;
-	/*background-color: pink;*/
+	margin-top: 30px;
 }
 
 div.producta:hover {
 	background-color: #FFD700;
+	border-radius: 5px;
 } 
 
 .producta p {
 	text-align: center;
 	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.2em;
 	color: #fafafa;
+	display: none;
+}
+
+div.producta:hover p {
+	display: block;
+}
+
+div.producta:hover a {
+	width: 80px;
+	margin: 0 auto;
+	background-color: red;
+    color: #fafafa;
+    padding: 14px 25px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center; 
+    text-decoration: none;
+	display: block;
 }
 
 .producta img {
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-top: 20px;
 }
 
 .ofertas {
-	height: 640px;
+	height: 645px;
 	width: 1100px;
-	/*background-color: violet;*/
+	padding-bottom: 100px;
 }
 
 .containerpb {
 	height: 570px;
 	width: 970px;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 50px;
 }
 
 .productb {
@@ -310,8 +448,13 @@ div.producta:hover {
 	margin-left: 11px;
 	float: left;
 	display: inline;
-	/*background-color: pink;*/
+	margin-top: 30px;
 }
+
+div.productb:hover {
+	border: 1px solid #deeaf7;
+	border-radius: 5px;
+} 
 
 .productb p {
 	text-align: center;
@@ -322,50 +465,20 @@ div.producta:hover {
 .productb img {
 	padding-left: 20px;
 	padding-right: 20px;
+	padding-top: 20px;
 }
 
-.categorias {
-	height: 560px;
-	width: 1100px;
-}
-
-.containerpc {
-	height: 500px;
-	width: 970px;
+div.productb:hover a {
+	width: 80px;
 	margin: 0 auto;
-	padding-top: 60px;
+	background-color: red;
+    color: #fafafa;
+    padding: 14px 25px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center; 
+    text-decoration: none;
+	display: block;
 }
-
-.slidergen {
-	height: 500px;
-	width: 150px;
-	margin-right: 20px;
-	margin-left: 20px;
-	float: left;
-	display: inline;
-}
-
-.productc {
-	height: 500px;
-	width: 230px;
-	margin-right: 15px;
-	margin-left: 15px;
-	float: left;
-	display: inline;
-}
-
-.containera img {
-	margin: 0 auto;
-}
-
-.containerb img {
-	margin: 0 auto;
-}
-
-.containerc img {
-	margin: 0 auto;
-}
-
 
 footer {
 	height: 300px;
@@ -391,7 +504,7 @@ footer {
 
 .data ul {
 	display: inline-block;
-	margin-top: 0;
+	margin-top: 20;
 }
 
 .data ul li {
@@ -420,13 +533,14 @@ footer {
 }
 
 .copyright {
-	height: 55px;
+	height: 60px;
 	width: 100%;
 	background-color: black;
+	margin-bottom: 0;
 }
 
 .copycont {
-	height: 55px;
+	height: 60px;
 	width: 1100px;
 	margin: 0 auto;
 }
@@ -435,6 +549,7 @@ footer {
 	height: 50px;
 	width: 50px;
 	display: inline;
+	margin: 0;
 }
 
 .copycont img {
@@ -447,4 +562,6 @@ footer {
 	font-family: 'Titillium Web', sans-serif;
 	color: #fafafa;
 	display: inline;
+	padding-left: 10px;
+	padding-bottom: 15px;
 }

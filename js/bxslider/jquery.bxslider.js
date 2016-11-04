@@ -52,7 +52,7 @@
 		pagerCustom: null,
 
 		// CONTROLS
-		controls: false,
+		controls: true,
 		nextText: 'Next',
 		prevText: 'Prev',
 		nextSelector: null,
@@ -64,8 +64,8 @@
 		autoControlsSelector: null,
 
 		// AUTO
-		auto: true,
-		pause: 1000,
+		auto: false,
+		pause: 4000,
 		autoStart: true,
 		autoDirection: 'next',
 		autoHover: false,
